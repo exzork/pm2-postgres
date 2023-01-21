@@ -5,7 +5,12 @@ var pgActions = require('./lib/actions.js');
 
 pmx.initModule({
 
-  pid: pmx.resolvePidPaths(['/var/run/postgresql/9.4-main.pid', '/var/run/postgresql/9.3-main.pid', '/var/run/postgresql/9.5-main.pid']),
+  pid: pmx.resolvePidPaths([
+    '/var/run/postgresql/9.4-main.pid', 
+    '/var/run/postgresql/9.3-main.pid', 
+    '/var/run/postgresql/9.5-main.pid',
+    '/var/run/postgresql/10-main.pid'
+  ]),
 
   // Options related to the display style on Keymetrics
   widget: {
